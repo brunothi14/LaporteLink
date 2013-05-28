@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lsp:</b>
+  <%= @used.lsp %>
+</p>
+
+<p>
+  <b>Profit:</b>
+  <%= @used.profit %>
+</p>
+
+<p>
+  <b>Detail:</b>
+  <%= @used.detail %>
+</p>
+
+<p>
+  <b>Finance:</b>
+  <%= @used.finance %>
+</p>
+
+
+<%= link_to 'Edit', edit_used_path(@used) %> |
+<%= link_to 'Back', useds_path %>

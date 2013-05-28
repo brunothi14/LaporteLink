@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lsp: 9.99
+  profit: 9.99
+  detail: 9.99
+  finance: 9.99
+
+two:
+  lsp: 9.99
+  profit: 9.99
+  detail: 9.99
+  finance: 9.99

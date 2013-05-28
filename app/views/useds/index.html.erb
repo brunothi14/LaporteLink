@@ -1,0 +1,29 @@
+<h1>Listing useds</h1>
+
+<table>
+  <tr>
+    <th>Lsp</th>
+    <th>Profit</th>
+    <th>Detail</th>
+    <th>Finance</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @useds.each do |used| %>
+  <tr>
+    <td><%= used.lsp %></td>
+    <td><%= used.profit %></td>
+    <td><%= used.detail %></td>
+    <td><%= used.finance %></td>
+    <td><%= link_to 'Show', used %></td>
+    <td><%= link_to 'Edit', edit_used_path(used) %></td>
+    <td><%= link_to 'Destroy', used, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Used', new_used_path %>

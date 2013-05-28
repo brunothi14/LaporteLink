@@ -1,0 +1,35 @@
+<h1>Listing tractors</h1>
+
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Year</th>
+    <th>Bonus</th>
+    <th>Cost</th>
+    <th>Serial</th>
+    <th>Stock</th>
+    <th>Arrival</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tractors.each do |tractor| %>
+  <tr>
+    <td><%= tractor.model %></td>
+    <td><%= tractor.year %></td>
+    <td><%= tractor.bonus %></td>
+    <td><%= tractor.cost %></td>
+    <td><%= tractor.serial %></td>
+    <td><%= tractor.stock %></td>
+    <td><%= tractor.arrival %></td>
+    <td><%= link_to 'Show', tractor %></td>
+    <td><%= link_to 'Edit', edit_tractor_path(tractor) %></td>
+    <td><%= link_to 'Destroy', tractor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tractor', new_tractor_path %>
