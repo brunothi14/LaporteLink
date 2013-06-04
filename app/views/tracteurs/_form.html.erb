@@ -1,0 +1,46 @@
+<%= form_for(@tracteur) do |f| %>
+  <% if @tracteur.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tracteur.errors.count, "error") %> prohibited this tracteur from being saved:</h2>
+
+      <ul>
+      <% @tracteur.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :modele %><br />
+    <%= f.text_field :modele %>
+  </div>
+  <div class="field">
+    <%= f.label :annee %><br />
+    <%= f.date_select :annee, { discard_month: true, discard_day: true, start_year: 1970	} %>
+  </div>
+  <div class="field">
+    <%= f.label :bonus %><br />
+    <%= f.text_field :bonus %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :serie %><br />
+    <%= f.text_field :serie %>
+  </div>
+  <div class="field">
+    <%= f.label :stock %><br />
+    <%= f.text_field :stock %>
+  </div>
+  <div class="field">
+    <%= f.label :arrivee %><br />
+    <%= f.date_select :arrivee %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

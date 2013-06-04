@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Modele:</b>
+  <%= @tracteur.modele %>
+</p>
+
+<p>
+  <b>Annee:</b>
+  <%= @tracteur.annee %>
+</p>
+
+<p>
+  <b>Bonus:</b>
+  <%= @tracteur.bonus %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @tracteur.cost %>
+</p>
+
+<p>
+  <b>Serie:</b>
+  <%= @tracteur.serie %>
+</p>
+
+<p>
+  <b>Stock:</b>
+  <%= @tracteur.stock %>
+</p>
+
+<p>
+  <b>Arrivee:</b>
+  <%= @tracteur.arrivee %>
+</p>
+
+
+<%= link_to 'Edit', edit_tracteur_path(@tracteur) %> |
+<%= link_to 'Back', tracteurs_path %>

@@ -1,9 +1,6 @@
 LaporteLink::Application.routes.draw do
+  resources :tracteurs
   resources :useds
-
-
-  resources :tractors
-
 
   get "home/index"
 
